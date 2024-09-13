@@ -1,0 +1,22 @@
+[debug] [2024-09-11T10:20:23.755Z] ----------------------------------------------------------------------
+[debug] [2024-09-11T10:20:23.761Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dytto\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js open
+[debug] [2024-09-11T10:20:23.761Z] CLI Version:   13.16.0
+[debug] [2024-09-11T10:20:23.762Z] Platform:      win32
+[debug] [2024-09-11T10:20:23.762Z] Node Version:  v21.1.0
+[debug] [2024-09-11T10:20:23.763Z] Time:          Wed Sep 11 2024 15:50:23 GMT+0530 (India Standard Time)
+[debug] [2024-09-11T10:20:23.763Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-11T10:20:23.895Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-11T10:20:23.896Z] > authorizing via signed-in user (dyttokhus@gmail.com)
+[debug] [2024-09-11T10:20:23.896Z] [iam] checking project netflixgpt-f97b2 for permissions ["firebase.projects.get"]
+[debug] [2024-09-11T10:20:23.901Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f97b2:testIamPermissions [none]
+[debug] [2024-09-11T10:20:23.901Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f97b2:testIamPermissions x-goog-quota-user=projects/netflixgpt-f97b2
+[debug] [2024-09-11T10:20:23.901Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f97b2:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-09-11T10:20:25.576Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f97b2:testIamPermissions 200
+[debug] [2024-09-11T10:20:25.577Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-f97b2:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-09-11T10:20:25.578Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f97b2 [none]
+[debug] [2024-09-11T10:20:26.981Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f97b2 200
+[debug] [2024-09-11T10:20:26.981Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f97b2 {"projectId":"netflixgpt-f97b2","projectNumber":"850932284901","displayName":"NetflixGPT","name":"projects/netflixgpt-f97b2","resources":{"hostingSite":"netflixgpt-f97b2","realtimeDatabaseInstance":"netflixgpt-f97b2-default-rtdb"},"state":"ACTIVE","etag":"1_8ca0d376-a145-458f-8e6c-0f9f0c345d03"}
+[debug] [2024-09-11T10:20:26.983Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f97b2 [none]
+[debug] [2024-09-11T10:20:27.420Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f97b2 200
+[debug] [2024-09-11T10:20:27.420Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-f97b2 {"projectId":"netflixgpt-f97b2","projectNumber":"850932284901","displayName":"NetflixGPT","name":"projects/netflixgpt-f97b2","resources":{"hostingSite":"netflixgpt-f97b2","realtimeDatabaseInstance":"netflixgpt-f97b2-default-rtdb"},"state":"ACTIVE","etag":"1_8ca0d376-a145-458f-8e6c-0f9f0c345d03"}
