@@ -7,9 +7,10 @@ import {
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_AVATAR } from "../utils/constant";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -17,7 +18,7 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState(null);
 
   //  Navigate is also a hook
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const dispatch = useDispatch();
 
   //  Lets now use -> useRef hook instead of useState .
@@ -59,11 +60,11 @@ const Login = () => {
           //  Update Profile here
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/116819942?v=4",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
-              // Profile updated!
-              const { uid, email, displayName, photoURL } = auth.currentUser ;  // auth is coming for the firebase, which will update it 
+              // Profile updated! 
+              const { uid, email, displayName, photoURL } = auth.currentUser; // auth is coming for the firebase, which will update it
               dispatch(
                 addUser({
                   uid: uid,
@@ -72,8 +73,7 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
-              // ...
+              // navigate("/browse");
             })
             .catch((error) => {
               // An error occurred
@@ -82,7 +82,7 @@ const Login = () => {
             });
 
           console.log(user);
-          navigate("/browse");
+          // navigate("/browse");
           // ...
         })
         .catch((error) => {
@@ -101,8 +101,8 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log("Success");
-          console.log(user);
-          navigate("/browse");
+          // con sole.log(user);
+          // navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
